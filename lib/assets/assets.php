@@ -41,9 +41,9 @@ final class Geiseric_Assets
     {
         wp_dequeue_style( 'kuorinka-fonts' );
 
-        $source_sans_pro  = 'Source Sans Pro:400,600,700,400italic,600italic,700italic';
-        $roboto_condensed = 'Roboto Condensed:300,400,700,300italic,400italic,700italic';
-        wp_enqueue_style( 'geiseric-fonts', "//fonts.googleapis.com/css?family={$source_sans_pro}|{$roboto_condensed}" );
+        $dosis     = 'Dosis:200,400,300';
+        $open_sans = 'Open+Sans:400,300,400italic,600,600italic,700,700italic';
+        wp_enqueue_style( 'geiseric-fonts', "//fonts.googleapis.com/css?family={$dosis}|{$open_sans}" );
     }
 
     /**

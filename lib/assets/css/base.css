@@ -9,22 +9,24 @@
 
 /* === 16.1 Font Family === */
 
-/*body,*/
-/*button,*/
-/*input,*/
-/*select,*/
-/*textarea {*/
-/*font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-/*}*/
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+}
 
-/*h1,*/
-/*h2,*/
-/*h3,*/
-/*h4,*/
-/*h5,*/
-/*h6 {*/
-/*font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-/*}*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Dosis, sans-serif;
+    font-weight: 300;
+}
 
 /*pre {*/
 /*font-family: "Courier 10 Pitch", Courier, monospace;*/
@@ -353,9 +355,22 @@
  */
 
 body {
-    background: #e3e3e3;
+    background-color: #fff;
 }
 
 #site-title a {
-    color: #929292;
+    color: #69675b;
 }
+
+/*
+ * Temporary fixes for the following issues:
+ *
+ * @see https://github.com/samikeijonen/kuorinka/issues/6
+ */
+
+@media screen and (min-width: 800px) {
+    #site-title {
+        width: 50%;
+    }
+}
+

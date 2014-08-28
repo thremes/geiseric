@@ -32,14 +32,14 @@ final class Geiseric_Main
     {
         //* Add custom background
         add_theme_support( 'custom-background', array(
-            'default-color' => 'e3e3e3',
-            'default-image' => FALSE,
+            'default-color' => 'fff',
+            'default-image'    => '%2$s/lib/assets/images/backgrounds/binding_light.png',
         ) );
 
         //* Add custom header
         add_theme_support( 'custom-header', array(
             'default-image'      => '',
-            'default-text-color' => '929292',
+            'default-text-color' => '69675b',
         ) );
     }
 
