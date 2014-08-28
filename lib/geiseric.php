@@ -30,10 +30,12 @@ final class Geiseric_Main
      */
     private function __construct()
     {
+        $child_dir_uri = trailingslashit( get_stylesheet_directory_uri() );
+
         //* Add custom background
         add_theme_support( 'custom-background', array(
             'default-color' => 'fff',
-            'default-image'    => '%2$s/lib/assets/images/backgrounds/binding_light.png',
+            'default-image' => "{$child_dir_uri}lib/assets/images/backgrounds/binding_light.png",
         ) );
 
         //* Add custom header
@@ -46,7 +48,7 @@ final class Geiseric_Main
     /**
      * Get the Singleton instance
      */
-    function get_instance()
+    static function get_instance()
     {
         static $instance;
         if ( !isset( $instance ) ) {

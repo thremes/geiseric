@@ -21,12 +21,3 @@ html {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
 }
-
-#page {
-    border-top: 12px solid #f3e686;
-    margin: 0 auto;
-
-    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
