@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 /*
- * At this point there are fonts, colors, background and borders used in a theme. 
+ * At this point there are fonts, colors, background and borders used in a theme.
  * You can overwrite them in your child theme 'style.css' if you need custom design.
  */
 
@@ -28,74 +28,79 @@ h6 {
     font-weight: 300;
 }
 
-/*pre {*/
-/*font-family: "Courier 10 Pitch", Courier, monospace;*/
-/*}*/
+pre {
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
 
-/*code,*/
-/*kbd,*/
-/*tt,*/
-/*var {*/
-/*font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;*/
-/*}*/
+code,
+kbd,
+tt,
+var {
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
 
 /* === 16.2 Colors === */
 
 /* Her is a list of used colors to help you out.
  *
- * Dark color for text and hover:           #303030
- * Lighter color for text:                  #555
+ * Dark color for text and hover:           #303030 -> #69675b
+ * Lighter color for text:                  #555 -> #96958C
  *
- * Dark color for titles and borders:       #054e92
+ * Dark color for titles and borders:       #054e92 -> #69675b
  * Lighter color for links and backgrounds: #1668b5
  * Color for text with above backgrounds:   #fff
  *
  * Light background color:                  #e6eff7
- 
+
  * For front page sticky post border:       #aacef0
  */
 
-/*body,*/
-/*button,*/
-/*input,*/
-/*select,*/
-/*textarea {*/
-/*color: #303030;*/
-/*}*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #69675b;
+}
 
-/*.breadcrumb-trail,*/
-/*.loop-description,*/
-/*.wp-caption-text,*/
-/*#colophon .site-info,*/
-/*input[type="text"],*/
-/*input[type="email"],*/
-/*input[type="url"],*/
-/*input[type="password"],*/
-/*input[type="search"],*/
-/*textarea,*/
-/*input,*/
-/*blockquote {*/
-/*color: #555;*/
-/*}*/
+.breadcrumb-trail,
+.loop-description,
+.wp-caption-text,
+#colophon .site-info,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+input,
+blockquote {
+    color: #96958C;
+}
 
-/*.entry-title,*/
-/*.sidebar .genericon,*/
-/*.sidebar .genericon::before,*/
-/*.kuorinka-front-page-content .genericon,*/
-/*.kuorinka-front-page-content .genericon::before,*/
-/*.screen-reader-text:hover,*/
-/*.screen-reader-text:active,*/
-/*.screen-reader-text:focus {*/
-/*color: #054e92;*/
-/*}*/
+.entry-title,
+.sidebar .genericon,
+.sidebar .genericon::before,
+.kuorinka-front-page-content .genericon,
+.kuorinka-front-page-content .genericon::before,
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    color: #69675b;
+}
 
-/*a,*/
-/*a:visited,*/
-/*a:hover,*/
-/*a:focus,*/
-/*a:active {*/
-/*color: #1668b5;*/
-/*}*/
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    color: #e18f5f;
+}
+
+.entry-title a,
+.entry-title a:hover {
+    color: #69675b;
+}
 
 /*button,*/
 /*input[type="button"],*/
@@ -109,74 +114,92 @@ h6 {
 
 /* == Menu colors and backgrounds == */
 
-/*#menu-primary li:hover > a,*/
-/*#menu-primary li.focus > a,*/
-/*button#nav-toggle:hover,*/
-/*button#nav-toggle:focus,*/
-/*button#nav-toggle.focus,*/
-/*#menu-primary li.current-menu-item,*/
-/*#menu-primary li.current-menu-item > a,*/
-/*#menu-primary ul ul a:hover,*/
-/*#menu-primary ul ul li.focus > a {*/
-/*background-color: #303030;*/
-/*color: #fff;*/
-/*}*/
+#menu-primary li:hover > a,
+#menu-primary li.focus > a,
+button#nav-toggle:hover,
+button#nav-toggle:focus,
+button#nav-toggle.focus,
+#menu-primary li.current-menu-item,
+#menu-primary li.current-menu-item > a,
+#menu-primary ul ul a:hover,
+#menu-primary ul ul li.focus > a {
+    background-color: #80a852;
+    color: #fff;
+}
 
-/*.custom-header-image #kuorinka-header-image img.header-image {*/
-/*border-top: 6px solid #054e92;*/
-/*}*/
+.custom-header-image #kuorinka-header-image img.header-image {
+    border-top: 0;
+}
 
 @media screen and (max-width: 899px) {
 
-    /*.nav-collapse li a,*/
-    /*button#nav-toggle {*/
-    /*background: #054e92;*/
-    /*background: rgba(11, 84, 152, 0.92);*/
-    /*border-bottom: 1px solid #e6eff7;*/
-    /*color: #fff;*/
-    /*}*/
-    /*button#nav-toggle.active {*/
-    /*border-bottom: 1px solid #e6eff7;*/
-    /*}*/
+    .nav-collapse li a,
+    button#nav-toggle {
+        background-color: #80a852;
+        background-color: rgba(128, 168, 82, 0.85);
+        border-bottom: 1px solid #D9E5CB;
+        color: #fff;
+    }
+
+    button#nav-toggle.active,
+    button#nav-toggle:hover {
+        background-color: #f3e686;
+        background-color: rgba(243, 230, 134, 0.92);
+        border-bottom: 1px solid #D9E5CB;
+        color: #69675b;
+    }
 
 }
 
 @media screen and (min-width: 900px) {
 
-    /*#menu-primary .wrap {*/
-    /*background: #054e92;*/
-    /*}*/
-    /*.custom-header-image.primary-menu-active #menu-primary .wrap {*/
-    /*background-color: rgba(11, 84, 152, 0.92);*/
-    /*}*/
-    /*#menu-primary a {*/
-    /*color: #fff;*/
-    /*}*/
-    /*#menu-primary ul ul {*/
-    /*background-color: #054e92;*/
-    /*background-color: rgba(11, 84, 152, 0.92);*/
-    /*}*/
-    /*#menu-primary ul ul a {*/
-    /*border-bottom: 1px solid #e6eff7;*/
-    /*}*/
+    #menu-primary .wrap {
+        background: #80a852;
+    }
+
+    .custom-header-image.primary-menu-active #menu-primary .wrap {
+        background-color: rgba(128, 168, 82, 0.85);
+    }
+
+    #menu-primary a {
+        color: #fff;
+    }
+
+    #menu-primary ul#menu-primary-items > li:hover > a,
+    #menu-primary ul#menu-primary-items > li.focus > a,
+    #menu-primary ul#menu-primary-items > li.current-menu-item,
+    #menu-primary ul#menu-primary-items > li.current-menu-item > a {
+        background-color: #f3e686;
+        background-color: rgba(243, 230, 134, 0.92);
+        color: #69675b;
+    }
+
+    #menu-primary ul ul {
+        background-color: #80a852;
+        background-color: rgba(128, 168, 82, 0.85);
+    }
+
+    #menu-primary ul ul a {
+        border-bottom: 1px solid #D9E5CB;
+    }
 
 }
 
 /* === 16.3 Backgrounds === */
 
-/*pre {*/
-/*background-color: #e6eff7;*/
-/*background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .5)), color-stop(.5, transparent), to(transparent));*/
-/*background-image: -webkit-linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);*/
-/*background-image: -moz-linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);*/
-/*background-image: -o-linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);*/
-/*background-image: linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);*/
-/*}*/
+pre {
+    background-color: #FCF4EF;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .5)), color-stop(.5, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);
+    background-image: linear-gradient(rgba(255, 255, 255, .5) 50%, transparent 50%, transparent);
+}
 
-/*mark,*/
-/*ins {*/
-/*background: #fff9c0;*/
-/*}*/
+mark,
+ins {
+    background: #FEFCF3;
+}
 
 /*button,*/
 /*input[type="button"],*/
@@ -212,35 +235,35 @@ h6 {
 /*background: #303030;*/
 /*}*/
 
-/*hr,*/
-/*#sidebar-header,*/
-/*#menu-portfolio ul li a,*/
-/*li.bypostauthor,*/
-/*.widget-title,*/
-/*.sticky,*/
-/*.sticky.entry,*/
-/*.page-links a,*/
-/*.single-portfolio_item .entry-terms.portfolio a,*/
-/*.screen-reader-text:hover,*/
-/*.screen-reader-text:active,*/
-/*.screen-reader-text:focus,*/
-/*body #gforms_confirmation_message,*/
-/*.post-type-archive-portfolio_item .entry-header,*/
-/*.tax-portfolio .entry-header,*/
-/*.term-post-format-video .entry-header,*/
-/*.kuorinka-callout {*/
-/*background: #e6eff7;*/
-/*}*/
+hr,
+#sidebar-header,
+#menu-portfolio ul li a,
+li.bypostauthor,
+.widget-title,
+.sticky,
+.sticky.entry,
+.page-links a,
+.single-portfolio_item .entry-terms.portfolio a,
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus,
+body #gforms_confirmation_message,
+.post-type-archive-portfolio_item .entry-header,
+.tax-portfolio .entry-header,
+.term-post-format-video .entry-header,
+.kuorinka-callout {
+    background: #F7F6EC;
+}
 
-/*#masthead .site-branding,*/
-/*.breadcrumb-trail .wrap,*/
-/*#kuorinka-header-image,*/
-/*#content > .wrap,*/
-/*#sidebar-subsidiary .wrap,*/
-/*#colophon #menu-social,*/
-/*#colophon .site-info {*/
-/*background: #fff;*/
-/*}*/
+#masthead .site-branding,
+.breadcrumb-trail .wrap,
+#kuorinka-header-image,
+#content > .wrap,
+#sidebar-subsidiary .wrap,
+#colophon #menu-social,
+#colophon .site-info {
+    background: #fff;
+}
 
 /* === 16.4 Borders === */
 
@@ -249,20 +272,20 @@ h6 {
 /*border-bottom: 1px dotted #555;*/
 /*}*/
 
-/*blockquote {*/
-/*border: 2px dotted #054e92;*/
-/*}*/
+blockquote {
+    border: 2px dotted #FCF4EF;
+}
 
-/*table {*/
-/*border-right: 1px solid #e6eff7;*/
-/*}*/
+table {
+    border-right: 1px solid #FCF4EF;
+}
 
-/*th,*/
-/*td {*/
-/*border-top: 1px solid #e6eff7;*/
-/*border-left: 1px solid #e6eff7;*/
-/*border-bottom: 1px solid #e6eff7;*/
-/*}*/
+th,
+td {
+    border-top: 1px solid #FCF4EF;
+    border-left: 1px solid #FCF4EF;
+    border-bottom: 1px solid #FCF4EF;
+}
 
 /*input[type="text"],*/
 /*input[type="email"],*/
@@ -300,23 +323,23 @@ h6 {
 
 }
 
-/*.widget-title,*/
-/*.sticky,*/
-/*.sticky.entry,*/
-/*li.bypostauthor,*/
-/*.post-type-archive-portfolio_item .entry-header .entry-title,*/
-/*.tax-portfolio .entry-header .entry-title,*/
-/*.term-post-format-video .entry-header .entry-title {*/
-/*border-bottom: 2px solid #054e92;*/
-/*}*/
+.widget-title,
+.sticky,
+.sticky.entry,
+li.bypostauthor,
+.post-type-archive-portfolio_item .entry-header .entry-title,
+.tax-portfolio .entry-header .entry-title,
+.term-post-format-video .entry-header .entry-title {
+    border-bottom: 2px solid #b1a843;
+}
 
-/*.entry-header .entry-title {*/
-/*border-bottom: 4px double #e6eff7;*/
-/*}*/
+.entry-header .entry-title {
+    border-bottom: 4px double #d7d7d7;
+}
 
-/*.sticky .entry-header .entry-title {*/
-/*border-bottom-color: #aacef0;*/
-/*}*/
+.sticky .entry-header .entry-title {
+border-bottom-color: #b1a843;
+}
 
 /*.comment-list > li {*/
 /*border-bottom: solid 3px #e6eff7;*/

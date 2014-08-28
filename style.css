@@ -16,6 +16,12 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
 #page {
     border-top: 12px solid #f3e686;
     margin: 0 auto;
@@ -23,8 +29,4 @@
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.custom-header-image #kuorinka-header-image img.header-image {
-    border-top: 0;
 }
