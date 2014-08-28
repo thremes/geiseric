@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Gizan34_Assets
+ * Class Geiseric_Assets
  */
-final class Gizan34_Assets
+final class Geiseric_Assets
 {
     /**
      * The Constructor
@@ -28,7 +28,7 @@ final class Gizan34_Assets
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Gizan34_Assets();
+            $instance = new Geiseric_Assets();
         }
 
         return $instance;
@@ -43,7 +43,7 @@ final class Gizan34_Assets
 
         $source_sans_pro  = 'Source Sans Pro:400,600,700,400italic,600italic,700italic';
         $roboto_condensed = 'Roboto Condensed:300,400,700,300italic,400italic,700italic';
-        wp_enqueue_style( 'gizan34-fonts', "//fonts.googleapis.com/css?family={$source_sans_pro}|{$roboto_condensed}" );
+        wp_enqueue_style( 'geiseric-fonts', "//fonts.googleapis.com/css?family={$source_sans_pro}|{$roboto_condensed}" );
     }
 
     /**
@@ -51,7 +51,7 @@ final class Gizan34_Assets
      */
     function styles()
     {
-        $this->enqueue_style( 'gizan34-base', 'base.css', array( 'kuorinka-style' ) );
+        $this->enqueue_style( 'geiseric-base', 'base.css', array( 'kuorinka-style' ) );
     }
 
     /**

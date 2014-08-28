@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Gizan34_Clip
+ * Class Geiseric_Clip
  */
-abstract class Gizan34_Clip
+abstract class Geiseric_Clip
 {
     /**
      * Render/Clip the shortcode template
@@ -56,9 +56,9 @@ abstract class Gizan34_Clip
 }
 
 /**
- * Class Gizan34_Clip_Shortcode
+ * Class Geiseric_Clip_Shortcode
  */
-final class Gizan34_Clip_Shortcodes extends Gizan34_Clip
+final class Geiseric_Clip_Shortcodes extends Geiseric_Clip
 {
     /**
      * Locate the template

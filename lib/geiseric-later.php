@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Gizan34_Later
+ * Class Geiseric_Later
  */
-final class Gizan34_Later
+final class Geiseric_Later
 {
     /**
      * The Constructor
@@ -20,7 +20,7 @@ final class Gizan34_Later
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Gizan34_Later();
+            $instance = new Geiseric_Later();
         }
 
         return $instance;

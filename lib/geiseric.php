@@ -1,29 +1,29 @@
 <?php
 
 //* Load main functionality
-add_action( 'after_setup_theme', array( 'Gizan34_Main', 'get_instance' ) );
+add_action( 'after_setup_theme', array( 'Geiseric_Main', 'get_instance' ) );
 
 //* Load cleanup functionality
-require_once( 'gizan34-cleanup.php' );
-add_action( 'after_setup_theme', array( 'Gizan34_Cleanup', 'get_instance' ), 15 );
+require_once( 'geiseric-cleanup.php' );
+add_action( 'after_setup_theme', array( 'Geiseric_Cleanup', 'get_instance' ), 15 );
 
 //* Load later functionality
-require_once( 'gizan34-later.php' );
-add_action( 'after_setup_theme', array( 'Gizan34_Later', 'get_instance' ), 15 );
+require_once( 'geiseric-later.php' );
+add_action( 'after_setup_theme', array( 'Geiseric_Later', 'get_instance' ), 15 );
 
 //* Load assets functionality
 require_once( 'assets/assets.php' );
-add_action( 'after_setup_theme', array( 'Gizan34_Assets', 'get_instance' ) );
+add_action( 'after_setup_theme', array( 'Geiseric_Assets', 'get_instance' ) );
 
 //* Load shortcode/clip infrastructure
 require_once( 'classes/clip.php' );
 require_once( 'shortcodes/shortcodes.php' );
-new Gizan34_Shortcodes( new Gizan34_Clip_Shortcodes() );
+new Geiseric_Shortcodes( new Geiseric_Clip_Shortcodes() );
 
 /**
- * Class Gizan34_Main
+ * Class Geiseric_Main
  */
-final class Gizan34_Main
+final class Geiseric_Main
 {
     /**
      * The Constructor
@@ -50,7 +50,7 @@ final class Gizan34_Main
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Gizan34_Main();
+            $instance = new Geiseric_Main();
         }
 
         return $instance;

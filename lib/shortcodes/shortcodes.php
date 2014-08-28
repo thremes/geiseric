@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Class Gizan34_Shortcodes
+ * Class Geiseric_Shortcodes
  */
-final class Gizan34_Shortcodes
+final class Geiseric_Shortcodes
 {
     /**
-     * @var Gizan34_Clip
+     * @var Geiseric_Clip
      */
     private $clip;
 

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Gizan34_Cleanup
+ * Class Geiseric_Cleanup
  */
-final class Gizan34_Cleanup
+final class Geiseric_Cleanup
 {
     /**
      * The Constructor
@@ -20,7 +20,7 @@ final class Gizan34_Cleanup
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Gizan34_Cleanup();
+            $instance = new Geiseric_Cleanup();
         }
 
         return $instance;
