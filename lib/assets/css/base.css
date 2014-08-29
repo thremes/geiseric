@@ -387,9 +387,9 @@ body {
  * @see https://github.com/samikeijonen/kuorinka/issues/6
  */
 
-@media screen and (min-width: 800px) {
-    #site-title {
-        width: 50%;
-    }
-}
+/*@media screen and (min-width: 800px) {*/
+    /*#site-title {*/
+        /*width: 50%;*/
+    /*}*/
+/*}*/
 
