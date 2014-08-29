@@ -41,20 +41,6 @@ var {
 
 /* === 16.2 Colors === */
 
-/* Her is a list of used colors to help you out.
- *
- * Dark color for text and hover:           #303030 -> #69675b
- * Lighter color for text:                  #555 -> #96958C
- *
- * Dark color for titles and borders:       #054e92 -> #69675b
- * Lighter color for links and backgrounds: #1668b5
- * Color for text with above backgrounds:   #fff
- *
- * Light background color:                  #e6eff7
-
- * For front page sticky post border:       #aacef0
- */
-
 body,
 button,
 input,
@@ -355,26 +341,26 @@ li.bypostauthor,
     border-bottom: solid 3px #d7d7d7;
 }
 
-/*body #webshare-wrapper {*/
-/*border-top-color: #e6eff7;*/
-/*border-bottom-color: #e6eff7;*/
-/*}*/
+body #webshare-wrapper {
+    border-top-color: #F3F3F3;
+    border-bottom-color: #F3F3F3;
+}
 
 /* === 16.5 Box Shadows === */
 
-/*.page-template-pagesfront-page-php .thumbnail {*/
-/*box-shadow: 0 0 0 4px #fff;*/
-/*}*/
+.page-template-pagesfront-page-php .thumbnail {
+    box-shadow: 0 0 0 4px #F3D2BF;
+}
 
-/*.format-status .avatar,*/
-/*.post-type-archive-team-member .avatar,*/
-/*.post-type-archive-team-member .thumbnail-team-member,*/
-/*.tax-team-member-category .avatar,*/
-/*.tax-team-member-category .thumbnail-team-member,*/
-/*.single-team-member .avatar,*/
-/*.single-team-member .thumbnail-team-member {*/
-/*box-shadow: 0 0 0 4px #e6eff7;*/
-/*}*/
+.format-status .avatar,
+.post-type-archive-team-member .avatar,
+.post-type-archive-team-member .thumbnail-team-member,
+.tax-team-member-category .avatar,
+.tax-team-member-category .thumbnail-team-member,
+.single-team-member .avatar,
+.single-team-member .thumbnail-team-member {
+    box-shadow: 0 0 0 4px #F7F6EC;
+}
 
 /*--------------------------------------------------------------
 17.0 Any needed fixes
