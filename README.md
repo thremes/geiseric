@@ -1,6 +1,6 @@
 # Geiseric
 
-Just one more starter child-theme for Kuorinka.
+One more child-theme for Kuorinka that invites to think about the nature.
 
 ## Parent Theme
 
@@ -9,4 +9,9 @@ Geiseric is a child theme of Kuorinka. You must have it installed to use this th
 
 ## Image Credits
 
-* [Binding Light](http://subtlepatterns.com/binding-light/) by Subtle Patterns
+Images by Subtle Patterns
+* [Binding Light](http://subtlepatterns.com/binding-light/)
+
+Images by [Unsplash](http://unsplash.com/), licensed under [CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0/)
+* [The Bear](http://bit.ly/1sQjaIW) by Thomas Lefebvre
+* [The Cut Tree](http://bit.ly/1gjnUlm) by Oisin Conolly
