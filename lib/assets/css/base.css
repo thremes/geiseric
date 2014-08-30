@@ -361,35 +361,3 @@ body #webshare-wrapper {
 .single-team-member .thumbnail-team-member {
     box-shadow: 0 0 0 4px #F7F6EC;
 }
-
-/*--------------------------------------------------------------
-17.0 Any needed fixes
---------------------------------------------------------------*/
-
-/*
- * Temporary fixes for the following issues:
- *
- * @see https://github.com/samikeijonen/kuorinka/issues/4
- * @see https://github.com/samikeijonen/kuorinka/issues/5
- */
-
-body {
-    background-color: #fff;
-}
-
-#site-title a {
-    color: #69675b;
-}
-
-/*
- * Temporary fixes for the following issues:
- *
- * @see https://github.com/samikeijonen/kuorinka/issues/6
- */
-
-/*@media screen and (min-width: 800px) {*/
-    /*#site-title {*/
-        /*width: 50%;*/
-    /*}*/
-/*}*/
-

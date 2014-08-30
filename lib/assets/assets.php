@@ -17,7 +17,7 @@ final class Geiseric_Assets
         //* Style Trump
         add_action( 'wp_enqueue_scripts', array( $this, 'style_trump' ), 99 );
 
-        //* Register default background/headers
+        //* Register default headers
         $this->default_headers();
     }
 
@@ -69,13 +69,13 @@ final class Geiseric_Assets
     function default_headers()
     {
         register_default_headers( array(
-            'sample-01' => array(
-                'url'           => '%2$s/lib/assets/images/headers/sample.png',
-                'thumbnail_url' => '%2$s/lib/assets/images/headers/sample-thumb.png'
+            'header-01' => array(
+                'url'           => '%2$s/lib/assets/images/headers/header-01.jpg',
+                'thumbnail_url' => '%2$s/lib/assets/images/headers/header-01-thumb.jpg'
             ),
-            'sample-02' => array(
-                'url'           => '%2$s/lib/assets/images/headers/sample.png',
-                'thumbnail_url' => '%2$s/lib/assets/images/headers/sample-thumb.png'
+            'header-02' => array(
+                'url'           => '%2$s/lib/assets/images/headers/header-02.jpg',
+                'thumbnail_url' => '%2$s/lib/assets/images/headers/header-02-thumb.jpg'
             )
         ) );
     }

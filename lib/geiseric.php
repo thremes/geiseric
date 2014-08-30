@@ -27,7 +27,7 @@ final class Geiseric_Main
 
         //* Add custom header
         add_theme_support( 'custom-header', array(
-            'default-image'      => '',
+            'default-image'      => "{$child_dir_uri}lib/assets/images/headers/header-01.jpg",
             'default-text-color' => '69675b',
         ) );
     }
