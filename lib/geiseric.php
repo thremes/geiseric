@@ -7,6 +7,9 @@ add_action( 'after_setup_theme', array( 'Geiseric_Main', 'get_instance' ) );
 require_once( 'assets/assets.php' );
 add_action( 'after_setup_theme', array( 'Geiseric_Assets', 'get_instance' ) );
 
+//* Load google-fonts helper
+require_once( 'classes/google-fonts.php' );
+
 /**
  * Class Geiseric_Main
  */
