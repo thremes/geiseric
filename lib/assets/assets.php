@@ -10,7 +10,7 @@ final class Geiseric_Assets
      */
     private function __construct()
     {
-        //* Enqueue/Dequeue fonts and styles
+        //* Enqueue or dequeue fonts/styles
         add_action( 'wp_enqueue_scripts', array( $this, 'fonts' ) );
         add_action( 'wp_enqueue_scripts', array( $this, 'styles' ) );
 
@@ -40,10 +40,7 @@ final class Geiseric_Assets
     function fonts()
     {
         wp_dequeue_style( 'kuorinka-fonts' );
-
-        $dosis     = 'Dosis:200,400,300';
-        $open_sans = 'Open+Sans:400,300,400italic,600,600italic,700,700italic';
-        wp_enqueue_style( 'geiseric-fonts', "//fonts.googleapis.com/css?family={$dosis}|{$open_sans}" );
+        wp_enqueue_style( 'geiseric-fonts', $this->google_fonts_url() );
     }
 
     /**
@@ -94,6 +91,40 @@ final class Geiseric_Assets
             $src = trailingslashit( get_stylesheet_directory_uri() ) . "lib/assets/css/{$src}";
             wp_enqueue_style( $handle, $src, $deps, FALSE, $media );
         }
+    }
+
+    /**
+     * Return the Google font stylesheet URL
+     *
+     * @return string
+     */
+    private function google_fonts_url()
+    {
+        /* Translators: If there are characters in your language that are not
+         * supported by Dosis, translate this to 'off'. Do not translate
+         * into your own language.
+         */
+        $dosis = _x( 'on', 'Dosis font: on or off', 'geiseric' );
+
+        /* Translators: If there are characters in your language that are not
+         * supported by Open+Sans, translate this to 'off'. Do not translate
+         * into your own language.
+         */
+        $open_sans = _x( 'on', 'Open+Sans font: on or off', 'geiseric' );
+
+        if ( 'off' !== $dosis || 'off' !== $open_sans ) {
+
+            $font_families = array();
+            if ( 'off' !== $dosis ) $font_families[ ] = 'Dosis:200,400,300';
+            if ( 'off' !== $open_sans ) $font_families[ ] = 'Open+Sans:400,300,400italic,600,600italic,700,700italic';
+
+            $fonts_url = add_query_arg( array(
+                'family' => urlencode( implode( '|', $font_families ) ),
+                'subset' => urlencode( 'latin,latin-ext' ),
+            ), '//fonts.googleapis.com/css' );
+        }
+
+        return isset( $fonts_url ) ? $fonts_url : FALSE;
     }
 
 }
