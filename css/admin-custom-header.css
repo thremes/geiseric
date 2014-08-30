@@ -1,6 +1,4 @@
 /* Overwrite some of the styles in admin header page. */
-@import url("//fonts.googleapis.com/css?family=Dosis:200,400,300");
-
 #headimg img {
     border-top: 12px solid #f3e686;
 }

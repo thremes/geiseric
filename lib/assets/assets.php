@@ -19,6 +19,12 @@ final class Geiseric_Assets
 
         //* Register default headers
         $this->default_headers();
+
+        //* Add editor fonts/styles
+        add_editor_style( $this->google_fonts_url() );
+
+        //* Add custom-header fonts/styles
+        add_action( 'admin_print_styles-appearance_page_custom-header', array( $this, 'fonts' ) );
     }
 
     /**
