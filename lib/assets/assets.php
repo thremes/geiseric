@@ -122,11 +122,11 @@ final class Geiseric_Assets
 
             $font_families = array();
             if ( 'off' !== $dosis ) $font_families[ ] = 'Dosis:200,400,300';
-            if ( 'off' !== $open_sans ) $font_families[ ] = 'Open+Sans:300italic,400italic,600italic,700italic,400,600,300,700';
+            if ( 'off' !== $open_sans ) $font_families[ ] = 'Open Sans:300italic,400italic,600italic,700italic,400,600,300,700';
 
             $fonts_url = add_query_arg( array(
-                'family' => implode( '|', $font_families ),
-                'subset' => 'latin,latin-ext',
+                'family' => urlencode( implode( '|', $font_families ) ),
+                'subset' => urlencode( 'latin,latin-ext' ),
             ), '//fonts.googleapis.com/css' );
         }
 
