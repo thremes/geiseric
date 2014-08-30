@@ -17,7 +17,7 @@ require_once( 'lib/geiseric.php' );
  * as usual. Once some features are done, tested and stable enough,
  * move them to a more apropriate functionality from file loaded right before.
  */
-add_action( 'genesis_setup', 'geiseric_setup' );
+add_action( 'after_setup_theme', 'geiseric_setup' );
 
 /**
  * The Custom Theme Setup
