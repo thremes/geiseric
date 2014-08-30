@@ -17,7 +17,12 @@ final class Geiseric_Main
      */
     private function __construct()
     {
+        //* Useful variables
+        $child_dir     = trailingslashit( get_stylesheet_directory() );
         $child_dir_uri = trailingslashit( get_stylesheet_directory_uri() );
+
+        //* Load text domain
+        load_child_theme_textdomain( 'geiseric', "{$child_dir}languages" );
 
         //* Add custom background
         add_theme_support( 'custom-background', array(

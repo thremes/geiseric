@@ -74,11 +74,13 @@ final class Geiseric_Assets
         register_default_headers( array(
             'header-01' => array(
                 'url'           => '%2$s/lib/assets/images/headers/header-01.jpg',
-                'thumbnail_url' => '%2$s/lib/assets/images/headers/header-01-thumb.jpg'
+                'thumbnail_url' => '%2$s/lib/assets/images/headers/header-01-thumb.jpg',
+                'description'   => __( 'The Bear', 'geiseric' )
             ),
             'header-02' => array(
                 'url'           => '%2$s/lib/assets/images/headers/header-02.jpg',
-                'thumbnail_url' => '%2$s/lib/assets/images/headers/header-02-thumb.jpg'
+                'thumbnail_url' => '%2$s/lib/assets/images/headers/header-02-thumb.jpg',
+                'description'   => __( 'The Cut Tree', 'geiseric' )
             )
         ) );
     }
