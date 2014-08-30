@@ -1,0 +1,16 @@
+/* Overwrite some of the styles in admin header page. */
+@import url("//fonts.googleapis.com/css?family=Dosis:200,400,300");
+
+#headimg img {
+    border-top: 12px solid #f3e686;
+}
+
+#site-title,
+#site-description {
+    font-family: Dosis, sans-serif;
+    font-weight: 400;
+}
+
+#site-description {
+    color: #69675b;
+}
