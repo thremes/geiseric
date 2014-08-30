@@ -1,0 +1,44 @@
+# Translation of Geiseric 0.1.0 in Portuguese (Brazil)
+# This file is distributed under the same license as the Geiseric 0.1.0 package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-08-30 16:11:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Geiseric 0.1.0\n"
+
+#: lib/assets/assets.php:78
+msgid "The Bear"
+msgstr "O Urso"
+
+#: lib/assets/assets.php:83
+msgid "The Cut Tree"
+msgstr "A Árvore Cortada"
+
+#: lib/assets/assets.php:115
+msgctxt "Dosis font: on or off"
+msgid "on"
+msgstr "on"
+
+#: lib/assets/assets.php:121
+msgctxt "Open+Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+msgid "Geiseric"
+msgstr "Geiseric"
+
+msgid "https://github.com/trsenna/geiseric"
+msgstr "https://github.com/trsenna/geiseric"
+
+msgid "One more child-theme for Kuorinka that invites to think about the nature."
+msgstr "Mais um tema-filho do Kuorinka, que nos convida à pensar sobre a natureza."
+
+msgid "Thiago Senna"
+msgstr "Thiago Senna"
+
+msgid "http://thremes.com.br"
+msgstr "http://thremes.com.br"
