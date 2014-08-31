@@ -104,7 +104,7 @@ final class Geiseric_Assets
              * supported by Dosis, translate this to 'off'. Do not translate
              * into your own language.
              */
-            _x( 'on', 'Open+Sans font: on or off', 'geiseric' )
+            _x( 'on', 'Dosis font: on or off', 'geiseric' )
         );
         $google_fonts->add(
             'Open Sans:300italic,400italic,600italic,700italic,400,600,300,700',
