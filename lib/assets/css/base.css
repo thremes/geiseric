@@ -46,7 +46,7 @@ button,
 input,
 select,
 textarea {
-    color: #69675b;
+    color: #545249;
 }
 
 .breadcrumb-trail,
@@ -61,7 +61,7 @@ input[type="search"],
 textarea,
 input,
 blockquote {
-    color: #96958C;
+    color: #787770;
 }
 
 .entry-title,
@@ -72,7 +72,7 @@ blockquote {
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-    color: #69675b;
+    color: #545249;
 }
 
 a,
@@ -80,14 +80,7 @@ a:visited,
 a:hover,
 a:focus,
 a:active {
-    color: #e18f5f;
-}
-
-.entry-title a,
-.entry-title a:hover,
-.sticky .entry-title a,
-.sticky .entry-title a:hover {
-    color: #69675b;
+    color: #9E6442;
 }
 
 .sticky a,
@@ -95,7 +88,14 @@ a:active {
 .sticky a:hover,
 .sticky a:focus,
 .sticky a:active {
-    color: #B4724C;
+    color: #905B3D;
+}
+
+.entry-title a,
+.entry-title a:hover,
+.sticky .entry-title a,
+.sticky .entry-title a:hover {
+    color: #545249;
 }
 
 button,
@@ -119,7 +119,7 @@ button#nav-toggle.focus,
 #menu-primary li.current-menu-item > a,
 #menu-primary ul ul a:hover,
 #menu-primary ul ul li.focus > a {
-    background-color: #80a852;
+    background-color: #5A7639;
     color: #fff;
 }
 
@@ -131,8 +131,8 @@ button#nav-toggle.focus,
 
     .nav-collapse li a,
     button#nav-toggle {
-        background-color: #80a852;
-        background-color: rgba(128, 168, 82, 0.85);
+        background-color: #5A7639;
+        background-color: rgba(90, 118, 57, 0.85);
         border-bottom: 1px solid #D9E5CB;
         color: #fff;
     }
@@ -142,7 +142,7 @@ button#nav-toggle.focus,
         background-color: #f3e686;
         background-color: rgba(243, 230, 134, 0.92);
         border-bottom: 1px solid #D9E5CB;
-        color: #69675b;
+        color: #545249;
     }
 
 }
@@ -150,11 +150,11 @@ button#nav-toggle.focus,
 @media screen and (min-width: 900px) {
 
     #menu-primary .wrap {
-        background: #80a852;
+        background: #5A7639;
     }
 
     .custom-header-image.primary-menu-active #menu-primary .wrap {
-        background-color: rgba(128, 168, 82, 0.85);
+        background-color: rgba(90, 118, 57, 0.85);
     }
 
     #menu-primary a {
@@ -167,12 +167,12 @@ button#nav-toggle.focus,
     #menu-primary ul#menu-primary-items > li.current-menu-item > a {
         background-color: #f3e686;
         background-color: rgba(243, 230, 134, 0.92);
-        color: #69675b;
+        color: #545249;
     }
 
     #menu-primary ul ul {
-        background-color: #80a852;
-        background-color: rgba(128, 168, 82, 0.85);
+        background-color: #5A7639;
+        background-color: rgba(90, 118, 57, 0.85);
     }
 
     #menu-primary ul ul a {
@@ -228,7 +228,7 @@ input[type="submit"]:active,
 body #infinite-handle span:hover,
 body #infinite-handle span:focus,
 body #infinite-handle span:active {
-    background: #69675b;
+    background: #545249;
 }
 
 hr,
