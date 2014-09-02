@@ -17,6 +17,8 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
+@import "lib/assets/css/base.css";
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;

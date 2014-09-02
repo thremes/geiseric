@@ -18,7 +18,6 @@ final class Geiseric_Assets
 
         //* Enqueue or dequeue fonts/styles
         add_action( 'wp_enqueue_scripts', array( $this, 'fonts' ) );
-        add_action( 'wp_enqueue_scripts', array( $this, 'styles' ) );
 
         //* Style Trump
         add_action( 'wp_enqueue_scripts', array( $this, 'style_trump' ), 99 );
@@ -53,14 +52,6 @@ final class Geiseric_Assets
     {
         wp_dequeue_style( 'kuorinka-fonts' );
         wp_enqueue_style( 'geiseric-fonts', $this->google_fonts->get_url() );
-    }
-
-    /**
-     * Enqueue Styles
-     */
-    function styles()
-    {
-        $this->enqueue_style( 'geiseric-base', 'base.css', array( 'kuorinka-style' ) );
     }
 
     /**
@@ -114,22 +105,6 @@ final class Geiseric_Assets
              */
             _x( 'on', 'Open+Sans font: on or off', 'geiseric' )
         );
-    }
-
-    /**
-     * Enqueue Style
-     *
-     * @param        $handle
-     * @param        $src
-     * @param array  $deps
-     * @param string $media
-     */
-    private function enqueue_style( $handle, $src, $deps = array(), $media = 'all' )
-    {
-        if ( file_exists( trailingslashit( get_stylesheet_directory() ) . "lib/assets/css/{$src}" ) ) {
-            $src = trailingslashit( get_stylesheet_directory_uri() ) . "lib/assets/css/{$src}";
-            wp_enqueue_style( $handle, $src, $deps, FALSE, $media );
-        }
     }
 
 }
