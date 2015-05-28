@@ -11,7 +11,7 @@ Geiseric is a child theme of Kuorinka. You must have it installed to use this th
 
 Kuorinka WordPress Theme, Copyright 2014 Sami Keijonen.
 
-Distributed under the terms of the GNU GPL.
+Kuorinka is distributed under the terms of the GNU GPL.
 
 ## Image Credits
 
