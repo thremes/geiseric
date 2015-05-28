@@ -7,9 +7,9 @@ One more child-theme for Kuorinka that invites to think about the nature.
 Geiseric is a child theme of Kuorinka. You must have it installed to use this theme.
 * [Kuorinka](https://foxnet-themes.fi/downloads/kuorinka) by Foxnet Themes
 
-Kuorinka WordPress Theme, Copyright 2015 Sami Keijonen
+### Copyright and Licensing
 
-Kuorinka is distributed under the terms of the GNU GPL
+Kuorinka WordPress Theme, Copyright 2015 Sami Keijonen. Distributed under the terms of the GNU GPL.
 
 ## Image Credits
 
